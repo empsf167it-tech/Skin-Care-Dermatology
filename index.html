@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraDerm - Luxury Skin Care & Dermatology Spa</title>
+    <meta name="description"
+        content="AuraDerm is a luxury skin care and dermatology spa offering professional skin treatments, acne care, anti-aging solutions, and personalized skincare guidance.">
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="light-mode">
+    <!-- Header / Navigation -->
+    <header class="header fixed-top" id="header">
+        <nav class="navbar navbar-expand-xl">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#hero">
+                    <img src="img/logo.svg" alt="AuraDerm Logo" width="32" height="32"
+                        class="d-inline-block align-text-top">
+                    <span class="brand-name fw-bold ms-2">AuraDerm</span>
+                </a>
+
+                <!-- Mobile toggles -->
+                <div class="d-flex align-items-center d-xl-none">
+                    <button class="theme-toggle-btn me-3" id="theme-toggle-mobile" aria-label="Toggle Theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="navbar-toggler border-0" type="button" id="mobile-menu-btn"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse d-none d-xl-flex" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#treatments">Treatments</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experts">Experts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <button class="theme-toggle-btn me-3" id="theme-toggle-desktop" aria-label="Toggle Theme">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <a href="#contact" class="btn btn-primary rounded-pill px-4">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Mobile Sidebar / Offcanvas -->
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header d-flex justify-content-between align-items-center p-4">
+            <div class="d-flex align-items-center">
+                <img src="img/logo.svg" alt="AuraDerm Logo" width="28" height="28" class="me-2">
+                <span class="brand-name fw-bold">AuraDerm</span>
+            </div>
+            <button class="close-sidebar border-0 bg-transparent text-reset" id="close-sidebar-btn">
+                <i class="fas fa-times fa-lg"></i>
+            </button>
+        </div>
+        <div class="sidebar-body p-4">
+            <ul class="navbar-nav flex-column mb-4">
+                <li class="nav-item"><a class="nav-link mobile-link active" href="#hero">Home</a></li>
+                <li class="nav-item"><a class="nav-link mobile-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link mobile-link" href="#treatments">Treatments</a></li>
+                <li class="nav-item"><a class="nav-link mobile-link" href="#experts">Experts</a></li>
+                <li class="nav-item"><a class="nav-link mobile-link" href="#results">Results</a></li>
+                <li class="nav-item"><a class="nav-link mobile-link" href="#faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link mobile-link" href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary w-100 rounded-pill mobile-link">Book Appointment</a>
+        </div>
+    </div>
+    <div class="sidebar-backdrop" id="sidebar-backdrop"></div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero-section d-flex align-items-center">
+            <div class="container text-center text-lg-start z-1 position-relative">
+                <div class="row">
+                    <div class="col-lg-7 col-xl-6">
+                        <span class="badge premium-badge mb-3">Advanced Skin & Dermatology Care</span>
+                        <h1 class="display-3 fw-bold mb-4 hero-title">Reveal Your Natural Glow</h1>
+                        <p class="lead mb-5 hero-desc">Experience personalized dermatology and cutting-edge skincare
+                            treatments designed to bring out the best version of your skin.</p>
+                        <div
+                            class="d-flex flex-column flex-sm-row gap-3 justify-content-lg-start justify-content-center mb-5">
+                            <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-4 py-2">Book a
+                                Consultation</a>
+
+                        </div>
+                        <div class="trust-highlights">
+                            <span class="me-3"><i class="fas fa-check-circle text-primary"></i> Board-Certified
+                                Experts</span>
+                            <span class="me-3"><i class="fas fa-check-circle text-primary"></i> Advanced
+                                Treatments</span>
+                            <span><i class="fas fa-check-circle text-primary"></i> Personalized Care</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-bg">
+                <img src="img/hero.jpg" alt="Beautiful healthy skin" class="hero-img">
+            </div>
+        </section>
+
+        <!-- 2. About Section -->
+        <section id="about" class="about-section py-6">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <div class="about-img-wrapper">
+                            <img src="img/about.jpg" alt="Dermatology Consultation"
+                                class="img-fluid rounded-4 shadow-lg about-img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5">
+                        <h2 class="section-title mb-4">Elevating Skincare Through Science & Elegance</h2>
+                        <p class="text-muted mb-4">At AuraDerm, we blend advanced medical dermatology with premium
+                            aesthetic care. Our bespoke treatments are tailored to your unique skin profile, ensuring
+                            safe, effective, and lasting results.</p>
+                        <ul class="list-unstyled feature-list">
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="icon-box bg-light-primary text-primary rounded-circle me-3"><i
+                                        class="fas fa-user-md"></i></div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">Expert Dermatologists</h5>
+                                    <p class="text-muted small mb-0">Board-certified specialists with years of clinical
+                                        experience.</p>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="icon-box bg-light-primary text-primary rounded-circle me-3"><i
+                                        class="fas fa-file-medical-alt"></i></div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">Personalized Skin Plans</h5>
+                                    <p class="text-muted small mb-0">Custom routines targeting your specific skin
+                                        concerns.</p>
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <div class="icon-box bg-light-primary text-primary rounded-circle me-3"><i
+                                        class="fas fa-microscope"></i></div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">Modern Technology</h5>
+                                    <p class="text-muted small mb-0">State-of-the-art equipment for precise diagnostics
+                                        and treatment.</p>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <div class="icon-box bg-light-primary text-primary rounded-circle me-3"><i
+                                        class="fas fa-shield-alt"></i></div>
+                                <div>
+                                    <h5 class="fw-semibold mb-1">Safe & Effective Treatments</h5>
+                                    <p class="text-muted small mb-0">Clinically proven methods for radiant, healthy
+                                        skin.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Our Treatments Section -->
+        <section id="treatments" class="treatments-section py-6 bg-light-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Premium Treatments</h2>
+                    <p class="text-muted">Discover our comprehensive range of dermatological services.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Treatment 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card treatment-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="img/treatment1.jpg" class="card-img-top treatment-img" alt="Acne Treatment">
+                            <div class="card-body p-4 text-center d-flex flex-column">
+                                <h5 class="card-title fw-bold">Acne & Scar Treatment</h5>
+                                <p class="card-text text-muted small">Advanced therapies to clear breakouts and smooth
+                                    acne scarring for a flawless complexion.</p>
+                                <a href="#contact" class="btn btn-link treatment-link mt-auto">Learn More <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Treatment 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card treatment-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="img/treatment2.jpg" class="card-img-top treatment-img" alt="Anti-Aging">
+                            <div class="card-body p-4 text-center d-flex flex-column">
+                                <h5 class="card-title fw-bold">Anti-Aging Care</h5>
+                                <p class="card-text text-muted small">Rejuvenating solutions to reduce fine lines and
+                                    restore your skin's youthful elasticity.</p>
+                                <a href="#contact" class="btn btn-link treatment-link mt-auto">Learn More <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Treatment 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card treatment-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="img/treatment3.jpg" class="card-img-top treatment-img" alt="Laser Skin">
+                            <div class="card-body p-4 text-center d-flex flex-column">
+                                <h5 class="card-title fw-bold">Laser Skin Treatment</h5>
+                                <p class="card-text text-muted small">Precision laser technology for resurfacing, hair
+                                    removal, and skin tone correction.</p>
+                                <a href="#contact" class="btn btn-link treatment-link mt-auto">Learn More <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Treatment 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card treatment-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="img/treatment4.jpg" class="card-img-top treatment-img" alt="Pigmentation">
+                            <div class="card-body p-4 text-center d-flex flex-column">
+                                <h5 class="card-title fw-bold">Pigmentation Treatment</h5>
+                                <p class="card-text text-muted small">Targeted regimens to fade dark spots, melasma, and
+                                    hyperpigmentation.</p>
+                                <a href="#contact" class="btn btn-link treatment-link mt-auto">Learn More <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Treatment 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card treatment-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="img/treatment5.jpg" class="card-img-top treatment-img" alt="Hydrafacial">
+                            <div class="card-body p-4 text-center d-flex flex-column">
+                                <h5 class="card-title fw-bold">Hydrafacial Therapy</h5>
+                                <p class="card-text text-muted small">Deep cleansing, exfoliation, and hydration for an
+                                    instant radiant glow.</p>
+                                <a href="#contact" class="btn btn-link treatment-link mt-auto">Learn More <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Treatment 6 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card treatment-card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+                            <img src="img/treatment6.jpg" class="card-img-top treatment-img" alt="Hair and Scalp">
+                            <div class="card-body p-4 text-center d-flex flex-column">
+                                <h5 class="card-title fw-bold">Hair & Scalp Care</h5>
+                                <p class="card-text text-muted small">Specialized dermatological treatments for hair
+                                    loss and scalp conditions.</p>
+                                <a href="#contact" class="btn btn-link treatment-link mt-auto">Learn More <i
+                                        class="fas fa-arrow-right ms-1"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Why Choose Us -->
+        <section class="why-us-section py-6 text-white position-relative">
+            <div class="why-us-overlay"></div>
+            <div class="container position-relative z-1">
+                <div class="text-center mb-5">
+                    <h2 class="section-title text-white">Why Choose AuraDerm</h2>
+                    <p class="lead">Excellence in dermatological care, tailored to you.</p>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-6 col-md-3">
+                        <div class="why-us-item h-100 d-flex flex-column justify-content-center">
+                            <i class="fas fa-user-md fa-3x mb-3 text-light-blush"></i>
+                            <div class="d-flex justify-content-center align-items-baseline mb-1">
+                                <h4 class="fw-bold counter mb-0" data-target="15">0</h4>
+                            </div>
+                            <p class="mb-0 mt-auto">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="why-us-item h-100 d-flex flex-column justify-content-center">
+                            <i class="fas fa-users fa-3x mb-3 text-light-blush"></i>
+                            <div class="d-flex justify-content-center align-items-baseline mb-1">
+                                <h4 class="fw-bold counter mb-0" data-target="10000">0</h4><span
+                                    class="fs-5 ms-1 fw-bold">+</span>
+                            </div>
+                            <p class="mb-0 mt-auto">Happy Patients</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="why-us-item h-100 d-flex flex-column justify-content-center">
+                            <i class="fas fa-award fa-3x mb-3 text-light-blush"></i>
+                            <div class="d-flex justify-content-center align-items-baseline mb-1">
+                                <h4 class="fw-bold counter mb-0" data-target="25">0</h4>
+                            </div>
+                            <p class="mb-0 mt-auto">Awards Won</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="why-us-item h-100 d-flex flex-column justify-content-center">
+                            <i class="fas fa-heart fa-3x mb-3 text-light-blush"></i>
+                            <div class="d-flex justify-content-center align-items-baseline mb-1">
+                                <h4 class="fw-bold counter mb-0" data-target="100">0</h4><span
+                                    class="fs-5 ms-1 fw-bold">%</span>
+                            </div>
+                            <p class="mb-0 mt-auto">Personalized Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Experts Section -->
+        <section id="experts" class="experts-section py-6">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Meet Our Experts</h2>
+                    <p class="text-muted">World-class dermatologists dedicated to your skin's health.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="expert-card card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
+                            <div class="expert-img-wrapper">
+                                <img src="img/expert1.jpg" class="card-img-top expert-img" alt="Dr. Maya Sharma">
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-1">Dr. Maya Sharma</h5>
+                                <p class="text-primary fw-medium small mb-2">Lead Dermatologist</p>
+                                <p class="text-muted small">12+ Years Experience</p>
+                                <div class="social-links mt-3">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="expert-card card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
+                            <div class="expert-img-wrapper">
+                                <img src="img/expert2.jpg" class="card-img-top expert-img" alt="Dr. Aisha Khan">
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-1">Dr. Aisha Khan</h5>
+                                <p class="text-primary fw-medium small mb-2">Cosmetic Dermatology</p>
+                                <p class="text-muted small">8+ Years Experience</p>
+                                <div class="social-links mt-3">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="expert-card card border-0 shadow-sm rounded-4 overflow-hidden text-center h-100">
+                            <div class="expert-img-wrapper">
+                                <img src="img/expert3.jpg" class="card-img-top expert-img" alt="Dr. Priya Nair">
+                            </div>
+                            <div class="card-body p-4">
+                                <h5 class="fw-bold mb-1">Dr. Priya Nair</h5>
+                                <p class="text-primary fw-medium small mb-2">Skin & Hair Specialist</p>
+                                <p class="text-muted small">10+ Years Experience</p>
+                                <div class="social-links mt-3">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Before & After Results -->
+        <section id="results" class="results-section py-6 bg-light-section">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Real Results</h2>
+                    <p class="text-muted">Witness the transformative power of our personalized treatments.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="result-card bg-white rounded-4 shadow-sm p-3 h-100">
+                            <div class="compare-wrapper mb-3 rounded-3 overflow-hidden position-relative">
+                                <img src="https://images.pexels.com/photos/16131212/pexels-photo-16131212.jpeg"
+                                    class="img-fluid w-100 object-fit-cover" style="aspect-ratio: 4/3;"
+                                    alt="Acne Treatment Result">
+                                <div class="ba-badge position-absolute top-0 start-0 m-2 badge bg-dark text-white">
+                                    Before & After</div>
+                            </div>
+                            <h5 class="fw-bold text-center">Acne & Scar Therapy</h5>
+                            <p class="text-muted small text-center mb-0">After 3 months of personalized treatment.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="result-card bg-white rounded-4 shadow-sm p-3 h-100">
+                            <div class="compare-wrapper mb-3 rounded-3 overflow-hidden position-relative">
+                                <img src="https://images.pexels.com/photos/31613321/pexels-photo-31613321.jpeg"
+                                    class="img-fluid w-100 object-fit-cover" style="aspect-ratio: 4/3;"
+                                    alt="Pigmentation Result">
+                                <div class="ba-badge position-absolute top-0 start-0 m-2 badge bg-dark text-white">
+                                    Before & After</div>
+                            </div>
+                            <h5 class="fw-bold text-center">Pigmentation Correction</h5>
+                            <p class="text-muted small text-center mb-0">After 4 laser sessions and topical care.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="result-card bg-white rounded-4 shadow-sm p-3 h-100">
+                            <div class="compare-wrapper mb-3 rounded-3 overflow-hidden position-relative">
+                                <img src="https://images.pexels.com/photos/7582564/pexels-photo-7582564.jpeg"
+                                    class="img-fluid w-100 object-fit-cover" style="aspect-ratio: 4/3;"
+                                    alt="Anti-Aging Result">
+                                <div class="ba-badge position-absolute top-0 start-0 m-2 badge bg-dark text-white">
+                                    Before & After</div>
+                            </div>
+                            <h5 class="fw-bold text-center">Anti-Aging Rejuvenation</h5>
+                            <p class="text-muted small text-center mb-0">Visible lift and reduced fine lines after 6
+                                weeks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Testimonials -->
+        <section class="testimonial-section py-6">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-title">Patient Experiences</h2>
+                    <p class="text-muted">What our valued clients say about their AuraDerm journey.</p>
+                </div>
+                <div class="testimonial-carousel position-relative overflow-hidden">
+                    <div class="testimonial-track d-flex" id="testimonialTrack">
+                        <!-- Review 1 -->
+                        <div class="testimonial-slide w-100 flex-shrink-0 px-3">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 text-center mx-auto"
+                                style="max-width: 600px;">
+                                <div class="rating text-warning mb-3">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="lead font-italic mb-4">"The acne treatments completely changed my life. Dr.
+                                    Maya was so patient and designed a routine that actually worked. My skin has never
+                                    looked better!"</p>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Jenkins"
+                                        class="rounded-circle me-3 shadow-sm" width="50" height="50"
+                                        style="object-fit: cover;">
+                                    <div class="text-start">
+                                        <h6 class="fw-bold mb-0">Sarah Jenkins</h6>
+                                        <span class="text-muted small">Acne Treatment</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review 2 -->
+                        <div class="testimonial-slide w-100 flex-shrink-0 px-3">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 text-center mx-auto"
+                                style="max-width: 600px;">
+                                <div class="rating text-warning mb-3">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                                <p class="lead font-italic mb-4">"I visited for pigmentation issues that I struggled
+                                    with for years. The laser therapy was gentle yet so effective. The clinic is
+                                    beautiful and hygienic."</p>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emma Watson"
+                                        class="rounded-circle me-3 shadow-sm" width="50" height="50"
+                                        style="object-fit: cover;">
+                                    <div class="text-start">
+                                        <h6 class="fw-bold mb-0">Emma Watson</h6>
+                                        <span class="text-muted small">Laser Therapy</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review 3 -->
+                        <div class="testimonial-slide w-100 flex-shrink-0 px-3">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 text-center mx-auto"
+                                style="max-width: 600px;">
+                                <div class="rating text-warning mb-3">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p class="lead font-italic mb-4">"Incredible experience. The hydrafacial left my skin
+                                    glowing instantly. The staff is professional and the premium feel of the clinic is
+                                    unmatched."</p>
+                                <div class="d-flex align-items-center justify-content-center mt-2">
+                                    <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Olivia Martinez"
+                                        class="rounded-circle me-3 shadow-sm" width="50" height="50"
+                                        style="object-fit: cover;">
+                                    <div class="text-start">
+                                        <h6 class="fw-bold mb-0">Olivia Martinez</h6>
+                                        <span class="text-muted small">Hydrafacial</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-outline-primary rounded-circle mx-1" id="prevTestimonial"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="btn btn-outline-primary rounded-circle mx-1" id="nextTestimonial"><i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. FAQ Section -->
+        <section id="faq" class="faq-section py-6 bg-light-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="text-center mb-5">
+                            <h2 class="section-title">Frequently Asked Questions</h2>
+                            <p class="text-muted">Find answers to common questions about our services.</p>
+                        </div>
+                        <div class="accordion custom-accordion" id="faqAccordion">
+                            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq1">
+                                        What should I expect during my first consultation?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Your first visit includes a comprehensive skin analysis by our experts. We
+                                        discuss your concerns, medical history, and lifestyle to create a fully
+                                        personalized treatment plan.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq2">
+                                        Are the treatments safe?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Absolutely. All our procedures are performed by board-certified dermatologists
+                                        using FDA-approved technology to ensure maximum safety and efficacy.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq3">
+                                        How long does acne treatment take to show results?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Results vary based on the severity, but most patients see a noticeable
+                                        improvement within 4 to 8 weeks of consistent, guided treatment.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq4">
+                                        Does laser treatment hurt?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Most patients describe the sensation as a mild snapping feeling. We use advanced
+                                        cooling systems and, if needed, numbing cream to ensure your comfort.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq5">
+                                        Will I get a personalized skincare plan?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        Yes! Post-consultation, we provide a detailed daily skincare routine tailored
+                                        specifically to your skin type and treatment goals.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 shadow-sm rounded-4 overflow-hidden">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed fw-semibold" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#faq6">
+                                        How do I book an appointment?
+                                    </button>
+                                </h2>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body text-muted">
+                                        You can easily book a session using the contact form below, or by calling our
+                                        clinic directly during working hours.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. Appointment & Contact -->
+        <section id="contact" class="contact-section py-6">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-7">
+                        <div class="form-wrapper bg-white p-5 rounded-4 shadow-sm h-100">
+                            <h3 class="fw-bold mb-4">Book Your Appointment</h3>
+                            <div id="formSuccess" class="alert alert-success d-none">Your appointment request has been
+                                sent successfully!</div>
+                            <form id="bookingForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <input type="text" class="form-control bg-light-input border-0 py-3"
+                                            placeholder="Full Name" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="email" class="form-control bg-light-input border-0 py-3"
+                                            placeholder="Email Address" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="tel" class="form-control bg-light-input border-0 py-3"
+                                            placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="date" class="form-control bg-light-input border-0 py-3" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <select class="form-select bg-light-input border-0 py-3" required>
+                                            <option value="" selected disabled>Select Treatment</option>
+                                            <option value="Consultation">General Consultation</option>
+                                            <option value="Acne">Acne & Scar Treatment</option>
+                                            <option value="AntiAging">Anti-Aging Care</option>
+                                            <option value="Laser">Laser Skin Treatment</option>
+                                            <option value="Hydrafacial">Hydrafacial Therapy</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <textarea class="form-control bg-light-input border-0 py-3" rows="4"
+                                            placeholder="Your Message (Optional)"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit"
+                                            class="btn btn-primary w-100 py-3 rounded-pill fw-bold">Confirm
+                                            Booking</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div
+                            class="contact-info-wrapper p-5 rounded-4 shadow-sm bg-primary text-white h-100 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold mb-4 text-white">Get in Touch</h3>
+                            <div class="d-flex align-items-start mb-4">
+                                <i class="fas fa-map-marker-alt fa-2x me-3 text-light-blush mt-1"></i>
+                                <div>
+                                    <h5 class="fw-semibold mb-1 text-white">Clinic Address</h5>
+                                    <p class="mb-0 text-white-50">123 Wellness Boulevard,<br>Medical District, NY 10001
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start mb-4">
+                                <i class="fas fa-phone-alt fa-2x me-3 text-light-blush mt-1"></i>
+                                <div>
+                                    <h5 class="fw-semibold mb-1 text-white">Phone</h5>
+                                    <p class="mb-0 text-white-50">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start mb-4">
+                                <i class="fas fa-envelope fa-2x me-3 text-light-blush mt-1"></i>
+                                <div>
+                                    <h5 class="fw-semibold mb-1 text-white">Email</h5>
+                                    <p class="mb-0 text-white-50">contact@auraderm.com</p>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-start">
+                                <i class="fas fa-clock fa-2x me-3 text-light-blush mt-1"></i>
+                                <div>
+                                    <h5 class="fw-semibold mb-1 text-white">Working Hours</h5>
+                                    <p class="mb-0 text-white-50">Mon - Fri: 9:00 AM - 7:00 PM<br>Sat: 10:00 AM - 4:00
+                                        PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1714421160350!5m2!1sen!2sus"
+            width="100%" height="450" style="border:0; display: block;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 pt-6 pb-4">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <a class="navbar-brand d-flex align-items-center mb-3" href="#hero">
+                        <img src="img/logo.svg" alt="AuraDerm Logo" width="36" height="36" class="me-2">
+                        <span class="brand-name fw-bold fs-3">AuraDerm</span>
+                    </a>
+                    <p class="text-muted mb-4 pe-lg-4">Your premium destination for advanced skincare, expert
+                        dermatology, and personalized aesthetic treatments.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h5 class="fw-bold mb-4">Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#treatments">Treatments</a></li>
+                        <li><a href="#experts">Experts</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Treatments</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="#">Acne & Scars</a></li>
+                        <li><a href="#">Anti-Aging</a></li>
+                        <li><a href="#">Laser Therapy</a></li>
+                        <li><a href="#">Pigmentation</a></li>
+                        <li><a href="#">Hydrafacial</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-4">Contact Info</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary"></i> 123 Wellness Blvd, NY
+                        </li>
+                        <li class="mb-2"><i class="fas fa-phone-alt me-2 text-primary"></i> +1 (555) 123-4567</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2 text-primary"></i> info@auraderm.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-top pt-4 d-flex justify-content-between align-items-center flex-column flex-md-row">
+                <p class="text-muted mb-0 small">&copy; 2026 AuraDerm. All Rights Reserved.</p>
+                <div class="mt-3 mt-md-0">
+                    <a href="#" class="text-muted small me-3 text-decoration-none">Privacy Policy</a>
+                    <a href="#" class="text-muted small text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
